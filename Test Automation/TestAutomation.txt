@@ -1,0 +1,16 @@
+# Background
+
+## A better way to do software engineering 
+
+### Simulation
+
+In 1968, NATO funded a conference that, even though its topic was little known to a wider audience, hosted more than 50 people from 11 different countries. After the conference, the NATO Science Committee was ordered to compile a report that summarized the discussions. Every time I read this report, I’m amazed by how insightful it was and that parts of it remain relevant. “We tend to go on for years, with tremendous investments, to find that the system, which was not well understood to start with, does not work as anticipated,” said J. W. Graham during a panel on feedback through monitoring and simulation. “We work like the Wright brothers built airplanes: build the whole thing, push it off the cliff, let it crash, and start over again.” Decades have passed, but not a lot has changed.
+
+
+Graham’s committee gathered to discuss whether there was a better way to do software engineering. They focused on the use of __simulation during design__, an idea introduced by Brian Randell in a working paper. “The important point [in building better software] is the use of simulation,” continued Graham. By simulation, he meant what we today call __test automation__—a deterministic environment with predefined inputs and predictable outcomes. “Simulation is a way to do trial and error experiments. If the system is simulated at each level of design, errors can be found and the performance checked at an early stage.” In other words, the earlier in the process we test, the sooner we can find mistakes. When we consistently test after every change in design, errors tend to disappear. In the end, we get better software.
+
+### Relationship between tests and Design
+ “A software system can best be designed if the testing is interlaced with the designing instead of being used after the design.” Test a little, code a little. If this sounds familiar, that’s because Perlis’s approach reemerged as __test-driven development (TDD)__ in the late 1990s. Modern TDD requires software engineers to write tests before any application code. Ideally, TDD should actively prevent defects by improving code design. Perlis predicted that, too: “A simulation which matches the requirements contains the control which organizes the design of the system. … The critical point is that the simulation becomes the system.” According to his vision, tests guide software design and organize it. TDD does the same.
+
+
+
