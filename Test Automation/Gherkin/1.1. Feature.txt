@@ -1,0 +1,19 @@
+# Feature
+
+Feature is Gherkin’s word for indicating that a new specification has begun—what follows is the name of the feature being documented. 
+Conventionally, every feature file consists of a single Feature in order to encourage writing many small files rather than a few large specifications.
+
+    Feature: Scheduling
+
+</br>
+
+Below the Feature line, you can add a **description** of the feature. It’s expected to describe the business value of this feature or to provide additional information that makes the feature easier to understand.
+
+   
+    Feature: Scheduling
+    
+      Because scheduling is a huge functionality, this specification file describes only the most important
+      high-level scenario.
+      You can find more detailed scenarios in the rest of the files inside the "meetings" folder in the specification suite.
+
+   

@@ -1,0 +1,37 @@
+# Scenario
+
+We know that Gherkin captures behavioral requirements. Behavioral requirements are formed as stories about how users behave when they interact with the system. In Gherkin, these stories are called _scenarios_.
+
+    Feature: Scheduling
+      Because scheduling is a huge functionality, this 
+      specification file describes only the most important 
+      high-level scenario. 
+      You can find more detailed scenarios in the rest 
+      of the files inside the "meetings" folder in the specification suite.
+    
+    Scenario: Creating a meeting
+
+</br>
+
+The keyword **Scenario** is a synonym of the keyword **Example**.
+
+    Feature: Scheduling
+      Because scheduling is a huge functionality, this 
+      specification file describes only the most important 
+      high-level scenario. 
+      You can find more detailed scenarios in the rest 
+      of the files inside the "meetings" folder in the specification suite.
+    
+    Example: Creating a meeting
+
+</br>
+
+Every scenario should do the following:
+
+- Define context (the _Givens_)
+- Describe an event that occurs within the system (the _Whens_)
+- Ensure that expected outcomes take place (the _Thens_)
+
+The sequence is called the Given-When-Then template.
+
+The _Givens_ explain what needs to happen so you can watch the rest of the scenario take place. The Whens neatly organize the template around a single behavior of the system, so a reader doesn’t have to wonder what the purpose of the _scenario_ is. The _Thens_ clarify the consequences of taking that action.

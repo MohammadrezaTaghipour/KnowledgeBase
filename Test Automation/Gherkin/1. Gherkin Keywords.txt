@@ -1,0 +1,14 @@
+# Full list of the keywords
+
+- Feature
+- Background
+- Scenario
+- Given
+- When
+- Then
+- And
+- But
+- Scenario Outline
+- Examples
+
+

@@ -1,0 +1,61 @@
+**REUSING GIVENS WITH BACKGROUNDS**
+
+Sometimes you’ll need the same prerequisites for all the scenarios in a _single feature file_. Gherkin makes that easier with backgrounds.
+
+**DEFINITION** _Background_—A list of steps that run before each one of the scenarios in the same feature file
+
+Here’s the specification, With duplicate Givens:
+
+    [BAD] Scenarios with redundant Givens
+
+    Feature: Search and replace
+
+    Scenario: Successful search
+    Given a text:
+      """
+      It was love at first sight, at last sight,
+      at ever and ever sight.
+      """
+    When Vladimir searches for "was"
+    Then he should be pointed to the word "was" in the text
+    
+    Scenario: Unsuccessful search
+    Given a text:
+      """
+      It was love at first sight, at last sight,
+      at ever and ever sight.
+      """
+    When Vladimir searches for "best"
+    Then he should see that there is no such word in the text
+
+Here’s the same specification, simplified thanks to a background:
+
+    [GOOD] Givens refactored into Background
+
+    Feature: Search and replace
+    
+    Background:
+    Given a text:
+      """
+      It was love at first sight, at last sight,
+      at ever and ever sight.
+      """
+    
+    Scenario: Successful search
+    When Vladimir searches for "was"
+    Then he should be pointed to the word "was" in the text
+
+    Scenario: Unsuccessful search
+    When Vladimir searches for "best"
+    Then he should see that there is no such word in the text
+
+
+
+
+**Should you use backgrounds?**
+
+Sometimes a background is a useful tool. We managed to decrease of almost 25% lines of text. And the more scenarios you have, the greater the decrease will be.
+ Having said that, We don’t advise using backgrounds too often. Many Gherkin practitioners think backgrounds are prone to being misused and that they make the specification layer too technical. Everyone should be able to read a Gherkin scenario and understand it even without knowing Gherkin’s syntax—backgrounds make this harder. If you feel like you have to use backgrounds frequently, you should think about using broader-concept steps or split your specification into several smaller feature files.
+
+# Choosing the right abstraction level
+

@@ -1,0 +1,5 @@
+
+# Understanding indentation in Gherkin’s syntax
+
+You may have noticed that, like Python and YAML, Gherkin is a line-oriented language that uses indentation to define structure. You can use spaces or tabs, but it’s usually considered a good practice to use spaces, because they maintain the structure more easily on everyone’s computers.
+Line-oriented languages require you to keep every command within a single line. You can’t write a two-line Given, for example. The only exceptions to the single-line rule are free-flowing descriptions such as the specification brief and scenario briefs. Free flowing descriptions aren’t part of the Given-When-Then template, and they don’t make any difference when it comes to automation. That’s why you can format them however you want.

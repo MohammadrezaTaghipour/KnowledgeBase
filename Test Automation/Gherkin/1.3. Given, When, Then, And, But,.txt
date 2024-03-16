@@ -1,0 +1,121 @@
+# Given
+
+_Givens_ answer a single question: what are the prerequisites that allow the scenario to happen?
+
+
+For example, when a scenario’s main action is, as in this case, creating a meeting,
+there must be some users who will be able to perform the action—so a user account
+must have been created first.
+
+
+    Feature: Scheduling
+      Because scheduling is a huge functionality, this 
+      specification file describes only the most important 
+      high-level scenario. 
+      You can find more detailed scenarios in the rest 
+      of the files inside the "meetings" folder in the specification suite.
+    
+    Scenario: Creating a meeting
+    Given Mike, a member of our team
+
+
+- Users play key roles in scenarios, and it’s a good practice to use unique, real names for
+several reasons.
+
+</br>
+
+# When
+
+_Givens_ create the context in which the rest of the scenario takes place. We should specify what the main action of the scenario should be. And, because _Whens_ describe key actions the user performs, this is the perfect job for a new When.
+
+    Feature: Scheduling
+      Because scheduling is a huge functionality, this 
+      specification file describes only the most important 
+      high-level scenario. 
+      You can find more detailed scenarios in the rest 
+      of the files inside the "meetings" folder in the specification suite.
+    
+    Scenario: Creating a meeting
+    Given Mike, a member of our team
+    When Mike chooses 2 p.m. as a start time for his meeting
+  
+
+- Every scenario should preferably have only one When, because that makes scenarios clearer and easier to read. And also When you use two Whens for one outcome, you can never be sure which When caused the outcome to happen. For more Details visit [Task-oriented thinking](/Home/Test-Automation/Gherkin/5.-Tips-and-Experiences/5.8.-Task%2Doriented-thinking).
+
+
+</br>
+
+# Then
+
+An action without an outcome is wasted. The part of the Given-When-Then template that asserts the outcome is the _Then_. Thens describe **consequences**.
+
+
+    Feature: Scheduling
+      Because scheduling is a huge functionality, this 
+      specification file describes only the most important 
+      high-level scenario. 
+      You can find more detailed scenarios in the rest 
+      of the files inside the "meetings" folder in the specification suite.
+    
+    Scenario: Creating a meeting
+    Given Mike, a member of our team
+    When Mike chooses 2 p.m. as a start time for his meeting
+    Then he should be able to save his meeting
+
+A Then is usually a concrete representation of the rule your criteria try to enforce. The representation is usually a change in the system. For example, it may be something new that was created—like Mike created his first meeting—but it may also be something that was removed or rephrased.
+The main difference between a scenario and the acceptance criteria you usually see is that the scenario seems much more **personal**. That’s because :
+-  Acceptance criteria are the abstract rules of the system; scenarios tell stories about people who use the system according to these rules.
+-  Human beings discuss and remember stories much better than they do abstract
+rules.
+
+</br>
+
+# And, But
+
+If you have successive Given’s or Then’s, you could write:
+    
+    Example: Multiple Givens
+    Given one thing
+    Given another thing
+    Given yet another thing
+    When I open my eyes
+    Then I should see something
+    Then I shouldn't see something else
+
+Or, you could make the example more fluidly structured by replacing the successive Given’s or Then’s with And’s and But’s:
+
+    Example: Multiple Givens
+    Given one thing
+    And another thing
+    And yet another thing
+    When I open my eyes
+    Then I should see something
+    But I shouldn't see something else
+
+- But keyword acts just like And (it tries to make the text more readable) 
+
+</br>
+
+# *
+
+Gherkin also supports using an asterisk (*) in place of any of the normal step keywords. This can be helpful when you have some steps that are effectively _a list of things_, so you can express it more like bullet points where otherwise the natural language of And etc might not read so elegantly.
+
+For example:
+
+    Scenario: All done
+    Given I am out shopping
+    And I have eggs
+    And I have milk
+    And I have butter
+    When I check my list
+    Then I don't need anything
+
+Could be expressed as:
+
+    Scenario: All done
+    Given I am out shopping
+    * I have eggs
+    * I have milk
+    * I have butter
+    When I check my list
+    Then I don't need anything
