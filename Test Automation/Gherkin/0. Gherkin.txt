@@ -1,0 +1,21 @@
+# What is Gherkin?
+
+
+
+
+## What?
+Gherkin is a business readable language which helps you to describe business behavior without going into details of implementation
+
+## Problem?
+How to write some business behaviors which the language is common for all members of a software team?
+
+## Solution
+Gherkin is a plain-text language with a simple structure. It is designed to be easy to learn by non-programmers, yet structured enough to allow concise description of test scenarios and examples to illustrate business rules in most real-world domains.
+
+## Benefits
+
+- Helps teams to capture knowledge about their intentions and about what their software products do
+The omnipresent Given-When-Then style of describing examples is close to natural language
+- it makes it easy for anyone to get started, which is fantastic because it lowers the bar for teams to start a conversation
+- Helps at supporting automated validation and long-term documentation
+- It makes translating requirements into code easier
