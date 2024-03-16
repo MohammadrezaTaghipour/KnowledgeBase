@@ -1,0 +1,118 @@
+# What’s a specification?
+
+Imagine that you and the team you work with have been brought in to work on a project that is management system for a local public transport company. To get on with work, you need a list of functionalities, user stories, blueprints, sketches—anything that will let you write some code or make a UI mock-up. You need a **specification**. The word _specification_ can mean a written document or an act of specifying.
+
+**DEFINITION** _Specification_—An analysis of a system and its design, made to plan and execute the implementation
+
+
+
+# What’s a Requirement?
+
+Imagine, you and the business owners may agree that a good requirement would be to apply discounts when students or retirees buy tickets. Other examples could relate to handling season tickets, performing online payments, managing customers, and reports.
+
+**DEFINITION** _Requirement_—A capability or condition that must be met or possessed by a solution to satisfy market needs or a contract, a standard, a specification, or other formally imposed documents.
+
+</br>
+
+# Why do teams need specifications?
+
+Traditionally, specifications have had a bad reputation in the software development community. The reason is half psychological, half practical.
+Psychologically, specifications seem to promise the same success as following a cooking recipe. They invite a “Follow the steps, and everything will be all right” mindset. The promise is as reassuring as it is deceiving. In practice, creating _a complete specification is extremely difficult, if not impossible_. 
+No software development team functions without specifications, though. Whether you write an official document or have a casual conversation about the requirements during a workshop, you’re still specifying. The one and only reason teams need specifications is information asymmetry. Teams need to distribute information evenly among the stakeholders to create the best possible product. If they don’t, they’ll miss critical requirements and make an incomplete product—or even a broken one. 
+
+
+**DEFINITION** _Information asymmetry_—A situation in which one party has more or better information than another
+
+To reduce information asymmetry, teams create specifications—recipes defining what needs to be done or how it needs to be done. Specifications can help fight information asymmetry in two ways:
+- A specification can define acceptance criteria that help examine whether a team has delivered a complete system that works
+- A specification can provide a common language that allows technical and nontechnical stakeholders to understand each other when they talk about requirements
+
+</br>
+
+# What is Acceptance Criteria?
+
+Acceptance criteria illustrate requirements. You should be able to use a criterion to evaluate the system and get an unambiguous confirmation that the system either passes or fails your test: for example, “A bus road should consist of at least two bus stops.” Right, and that’s how the system behaves.
+
+**DEFINITION** _Acceptance criterion_—A condition or quality measure that a software product must meet to satisfy requirements
+
+
+Without clear acceptance criteria for each of the requirements, delivery teams can’t plan any work ahead and deliver any value in a predictable way. When there’s not a good specification, functionality usually suffers from rework or bugs that cause delays and cost a lot. Good acceptance criteria ensure that the implemented solution meets the demands of your stakeholders.
+
+</br>
+
+# Common specification pitfalls and anti-patterns
+- Over-specification  
+- Hand-offs
+- Under-documentation
+- Speci-fiction 
+- Test-inability 
+
+
+##  Over-specification
+
+A popular first instinct meant to defend a project against ambiguity and insufficient planning is to try to design and plan as much as we can up front. We call that _overspecification_.
+
+**DEFINITION** _Over-specification_—Doing too much specification up front
+
+
+It’s definitely easier to remove or change a requirement during an analysis phase; the more time we invest in implementing it, the more unmotivated we become when we have to kill it. The up-front approach aims to remove useless implementations, design flaws, and predictable errors as early as possible in exchange for a longer analysis phase. But software development teams must also understand that over-specification can lead to a state of _analysis paralysis_.
+
+**DEFINITION** _Analysis paralysis_—A productivity block created in search of the perfect—unattainable—design
+
+In extreme cases, bureaucratic or regulated environments may demand over-specification by requesting specification documents that can run into thousands of pages. (Bear in mind, though, that analysis paralysis isn’t limited to written specifications.) But unless you’re making software for surgeons, analyzing every single detail in advance often feels unnecessary—even harmful.
+
+
+## Hands-offs 
+
+Handing off requirements looks like a classic waterfall mistake—an artifact from the past—but I still see agile teams struggling with hand-offs, often due to their organization’s internal politics. Any requirement can be handed off.
+
+**DEFINITION** Hand-off—A situation in which somebody analyzes requirements without the input of the delivery team, signs off on the scope by writing down the analyzed requirements, and later hands off those requirements to the delivery team to complete
+
+
+Hand-offs result in a fragmented communication flow between business and delivery. People who hand off requirements are often business users, managers, analysts, product owners, or designers, depending on the chain of command in a
+given organization. In a management-oriented company, managers are more likely to create an environment where they can decide on the list of requirements and the scope, trying to maintain control over important decisions.
+Hand-offs cause various problems with delivery. A team that only receives a specification won’t understand the context in which the requirements were collected. Their decision-making abilities will be impaired when it comes to split-second decisions.
+
+
+**TIP** Don’t let documentation replace communication.
+
+
+## Under-documentation
+
+Many delivery teams burnt by over-specification discard it in favor of an implementation first approach, eradicating any up-front practices. Initially, the implementation-first approach feels efficient, especially in young companies— but as the organization grows and the product matures, diseconomies of scale kick in. Not everyone is a coder.
+
+**DEFINITION** _Under-documentation_—Discarding documentation and letting code speak for itself in order to speed up development
+
+
+Underdocumented teams are left with no clear path to track decisions made in the past. Institutional memory suffers; when people who worked on implementation become unavailable, temporarily or permanently, they take their knowledge with them.
+
+**TIP** Don’t let agile be an excuse to ignore documentation.
+
+## Speci-fiction
+
+Documentation and specification artifacts grow obsolete easily. As your product evolves over time, requirements often evolve, flat-out change, or turn out to be poorly defined and have to be refined. Documentation and specifications, like all internally complex documents, are often too difficult to update on a regular basis without introducing some inconsistencies.
+  
+**DEFINITION** _Speci-fiction_—A specification that poses as a single source of truth but that can’t be one because nobody cares to update it
+
+If you’ve ever struggled with outdated documentation, you’re already familiar with the phenomenon of speci-fiction. Sometimes documents are left outdated because of multiple last-minute changes. In this case, the fiction in speci-fiction is that a new reader would be led to falsely believe that the specification or documentation describes the entire system as it is, when the working system is, in fact, different, because the requirements were changed during the release frenzy. Speci-fiction is only an illusion of correctness—an illusion that occurs when no single, reliable source of truth exists.
+
+## Test-inability
+
+Testability should be baked into a good user story, because testability lays the foundation for quality. How can you be sure that you delivered any business value if you don’t know how to test its implementation? Or how can you know that you’ll continue to deliver value in the future, regardless of any system changes or errors? What we call test-inability is a team’s failure to answer questions like these—a failure that originates in a bad specification process.
+
+**DEFINITION** _Test-inability_—Lacking clear measures of value that can support development
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
