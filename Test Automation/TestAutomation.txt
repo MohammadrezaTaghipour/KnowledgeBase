@@ -13,4 +13,5 @@ Graham’s committee gathered to discuss whether there was a better way to do so
  “A software system can best be designed if the testing is interlaced with the designing instead of being used after the design.” Test a little, code a little. If this sounds familiar, that’s because Perlis’s approach reemerged as __test-driven development (TDD)__ in the late 1990s. Modern TDD requires software engineers to write tests before any application code. Ideally, TDD should actively prevent defects by improving code design. Perlis predicted that, too: “A simulation which matches the requirements contains the control which organizes the design of the system. … The critical point is that the simulation becomes the system.” According to his vision, tests guide software design and organize it. TDD does the same.
 
 change-1
+change-2
 
